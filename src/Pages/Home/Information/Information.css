@@ -1,0 +1,17 @@
+.styled{
+  width: 200px;
+  height: 200px;
+}
+.container{
+	display: flex;
+    overflow:hidden;
+}
+
+@media (max-width: 800px) {
+	.container {
+		display:list-item;
+	  margin: 10px 0;
+	}
+  
+  }
+
