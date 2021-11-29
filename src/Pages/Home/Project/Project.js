@@ -1,20 +1,52 @@
-import React from 'react';
-import { Col, Row,Button } from 'react-bootstrap';
-import './Project.css';
+import React, { useEffect, useState } from "react";
+import { Col, Row, Button, ButtonGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./Project.css";
 
 const Project = () => {
-    return (
-      <div className="container font">
+  const [details, setDetails] = useState({});
+  useEffect(() => {
+    fetch(`./fakeData.json`)
+      .then((res) => res.json())
+      .then((data) => setDetails(data));
+  }, []);
+  return (
+    <div>
+      <h5> Lenth: {details.length} </h5>
+      <div className="container font w-100">
         <Row>
           <Col xs={12} md={8} lg={6}>
             <h2 className="ms-3">MY PROJECT</h2>
           </Col>
           <Col xs={12} md={8} lg={6}>
             <div>
-              <h5>1.Project: HandiCraft Jwellery</h5>
-              <Button variant="outline-secondary" target="_blank" href="https://handicraft-jwellery.web.app/" className="blue text response">LiveSite </Button>|| 
-              <Button variant="outline-secondary" target="_blank" href="https://github.com/sohel72989/HandiCraft-Jwellery-ClientSite" className="blue text response">ClientCodeLink </Button>|| 
-              <Button variant="outline-secondary" target="_blank" href="https://github.com/sohel72989/HandiCraft-Jwellery-ServerSite" className="blue text response">ServerCodeLink </Button>
+              <h5>1.Project:HandiCraft Jwellery</h5>
+              <ButtonGroup aria-label="Basic example">
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://handicraft-jwellery.web.app/"
+                  className="blue text "
+                >
+                  LiveSite
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/HandiCraft-Jwellery-ClientSite"
+                  className="blue text "
+                >
+                  ClientCodeLink
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/HandiCraft-Jwellery-ServerSite"
+                  className="blue text "
+                >
+                  ServerCodeLink
+                </Button>
+              </ButtonGroup>
               <ul>
                 <li>
                   In this project User can Log in with register and Order
@@ -30,10 +62,43 @@ const Project = () => {
                   ,MongoDB,
                 </li>
               </ul>
+              <Link to="/projectDetails">
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/HandiCraft-Jwellery-ServerSite"
+                  className="blue text w-100"
+                >
+                  Details
+                </Button>
+              </Link>
               <h5>2.Project: TourPlan BD</h5>
-              <Button variant="outline-secondary" target="_blank" href="https://tourism-planbd.netlify.app/" className="blue text response">LiveSite </Button>|| 
-              <Button variant="outline-secondary" target="_blank" href="https://github.com/sohel72989/TourPlanBd-ClientSite" className="blue text response">ClientCodeLink </Button>
-              <Button variant="outline-secondary" target="_blank" href="https://github.com/sohel72989/TourPlanBd-ServerSite" className="blue text response" >ServerCodeLink </Button>
+              <ButtonGroup aria-label="Basic example">
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://tourism-planbd.netlify.app/"
+                  className="blue text "
+                >
+                  LiveSite
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/TourPlanBd-ClientSite"
+                  className="blue text "
+                >
+                  ClientCodeLink
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/TourPlanBd-ServerSite"
+                  className="blue text "
+                >
+                  ServerCodeLink
+                </Button>
+              </ButtonGroup>
               <ul>
                 <li>
                   In this project, User can be Log in with register and Purchase
@@ -51,8 +116,24 @@ const Project = () => {
                 </li>
               </ul>
               <h5> 3.Project: PureDentSmile </h5>
-              <Button variant="outline-secondary" target="_blank" href="https://dental-health-care.netlify.app/" className="blue text response">LiveSite </Button>|| 
-              <Button variant="outline-secondary" target="_blank" href="https://github.com/sohel72989/Health-Care-Related-webdsite" className="blue text response" >CodeLink</Button>
+              <ButtonGroup aria-label="Basic example">
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://dental-health-care.netlify.app/"
+                  className="blue text "
+                >
+                  LiveSite
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  target="_blank"
+                  href="https://github.com/sohel72989/Health-Care-Related-webdsite"
+                  className="blue text "
+                >
+                  CodeLink
+                </Button>
+              </ButtonGroup>
               <ul>
                 <li>
                   In this project, User can be Log in with register and view
@@ -72,7 +153,8 @@ const Project = () => {
           </Col>
         </Row>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Project;
