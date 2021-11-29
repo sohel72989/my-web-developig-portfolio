@@ -23,6 +23,7 @@ const Contact = () => {
       <div>
         <div>
           <form className="form-style-4 text-center" onSubmit={sendEmail} action="" method="post">
+          <h2 className="text-center text-white fw-bolder mb-5"> Contact Me</h2>
             <label for="field1">
               <span>Enter Your Name</span>
               <input type="text" name="name" required="true" />

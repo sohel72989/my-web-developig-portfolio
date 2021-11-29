@@ -6,7 +6,7 @@ import './Information.css';
 
 const Information = () => {
     return (
-      <div className="container">
+      <div className="container font">
         <div className="p-5 text-center">
           <Image src={image} roundedCircle alt="avatar" className="styled" />
           <h2 className="pt-3">Sohel Rana</h2>
