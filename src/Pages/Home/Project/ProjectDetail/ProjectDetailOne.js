@@ -16,7 +16,7 @@ import image10 from '../../../../img/Project-1/Footer.png';
 const ProjectDetailOne = () => {
     return (
         <div className="contains">
-            <h2 className="text-center m-5">Details Of Project</h2>
+            <h2 className="text-center m-5">Details Of HandiCraft Jwellery</h2>
             <Row className="m-2">
                 <Col xs={12} md={8} lg={6} className="p-4">
                     <ul>

@@ -12,7 +12,7 @@ import image6 from '../../../../img/Project-3/Footer.png';
 const ProjectDetailThree = () => {
     return (
         <div className="contains">
-            <h2 className="text-center m-5">Details Of Project</h2>
+            <h2 className="text-center m-5">Details Of PureDentSmile</h2>
             <Row className="m-2">
                 <Col xs={12} md={8} lg={6} className="p-4">
                 <ul>
