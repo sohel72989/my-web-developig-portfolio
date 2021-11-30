@@ -15,10 +15,12 @@ import ProjectDetailTwo from './Pages/Home/Project/ProjectDetail/ProjectDetailTw
 import ProjectDetailThree from './Pages/Home/Project/ProjectDetail/ProjectDetailThree';
 import Header from './Pages/Home/Header/Header';
 import AboutMe from './Pages/Home/Information/AboutMe';
+import Banner from './Pages/Home/Header/Banner/Banner';
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      <Header />
+      <Banner/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
