@@ -1,12 +1,12 @@
 import React from 'react';
-import Information from './Information/Information';
 import Contact from './Contact/Contact';
 import Project from './Project/Project';
 import Skills from './Skill/Skills';
+import AboutMe from './Information/AboutMe';
 const Home = () => {
     return (
         <div>
-            <Information />
+            <AboutMe />
             <Skills/>
             <Project/>
             <Contact />

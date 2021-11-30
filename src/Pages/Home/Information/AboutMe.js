@@ -4,9 +4,9 @@ import image from '../../../img/information/sohel_rana.jpg';
 import './Information.css';
 
 
-const Information = () => {
+const AboutMe = () => {
     return (
-      <div className="container font">
+      <div className="container font w-100">
         <div className="p-5 text-center">
           <Image src={image} roundedCircle alt="avatar" className="styled" />
           <h2 className="pt-3">Sohel Rana</h2>
@@ -85,4 +85,4 @@ const Information = () => {
     );
 };
 
-export default Information;
+export default AboutMe;
