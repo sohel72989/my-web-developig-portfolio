@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image,Row,Col } from 'react-bootstrap';
+import { Image,Row,Col,Button, ButtonGroup } from 'react-bootstrap';
 import image from '../../../img/information/sohel_rana.jpg';
 import './Information.css';
 
@@ -11,27 +11,29 @@ const Information = () => {
           <Image src={image} roundedCircle alt="avatar" className="styled" />
           <h2 className="pt-3">Sohel Rana</h2>
           <h5 className="pb-3">MERN Stack Developer</h5>
-          <a
+          <ButtonGroup aria-label="Basic example">
+        <Button
             target="_blank"
             href="https://www.facebook.com/rana72989"
-            className="p-2 text-secondary"
+            className="p-2 btn btn-secondary Button-styled"
           >
             <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a
+        </Button>
+        <Button
             target="_blank"
             href="https://www.linkedin.com/in/sohel-rana-916966147/"
-            className="p-2 text-secondary"
+            className="p-2 btn btn-secondary Button-styled"
           >
             <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a
+        </Button>
+        <Button
             target="_blank"
             href="https://github.com/sohel72989"
-            className="p-2 text-secondary"
+            className="p-2 btn btn-secondary Button-styled"
           >
             <i class="fab fa-github fa-2x"></i>
-          </a>
+        </Button>
+        </ButtonGroup>
         </div>
         <div className="p-5">
           <h2>Biography</h2>

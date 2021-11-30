@@ -9,6 +9,9 @@ import Contact from './Pages/Home/Contact/Contact';
 import Information from './Pages/Home/Information/Information';
 import Project from './Pages/Home/Project/Project';
 import ProjectDetails from './Pages/Home/Project/ProjectDetails';
+import Footer from './Pages/Home/Footer/Footer';
+import Skills from './Pages/Home/Skill/Skills';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -16,11 +19,14 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/blogs" element={<Blogs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/information" element={<Information />} />
       <Route path="/project" element={<Project />} />
       <Route path="/projectDetails" element={<ProjectDetails />} />
-    </Routes>
+      </Routes>
+      <Footer></Footer>
   </BrowserRouter>
   );
 }

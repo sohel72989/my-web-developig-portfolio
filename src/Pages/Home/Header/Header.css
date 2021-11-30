@@ -66,6 +66,7 @@ div.circleBehind .hv:hover:after
     
         color: #FFF;
         text-decoration: none;
+        width:auto;
         font: 20px Raleway;
         margin: 0px 10px;
         padding: 10px 10px;
@@ -77,6 +78,15 @@ div.circleBehind .hv:hover:after
 	.response {
 	  margin: 20px;
 	}
-  
+    div.container-style
+{
+    font-family: Raleway;
+    width: auto;
+    height: auto;
+    display:block;
+	padding-bottom: 20px;;
+	text-align: center;
+}
+    
   }
 

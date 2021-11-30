@@ -12,7 +12,6 @@ const Project = () => {
   }, []);
   return (
     <div>
-      <h5> Lenth: {details.length} </h5>
       <div className="container font w-100">
         <Row>
           <Col xs={12} md={8} lg={6}>
