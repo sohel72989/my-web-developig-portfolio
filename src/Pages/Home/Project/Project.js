@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Col, Row, Button, ButtonGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = () => {
-  const [details, setDetails] = useState({});
-  useEffect(() => {
-    fetch(`./fakeData.json`)
-      .then((res) => res.json())
-      .then((data) => setDetails(data));
-  }, []);
   return (
     <div>
       <div className="container font w-100">
@@ -61,11 +55,9 @@ const Project = () => {
                   ,MongoDB,
                 </li>
               </ul>
-              <Link to="/projectDetails">
+              <Link to="/projectDetailOne">
                 <Button
                   variant="outline-secondary"
-                  target="_blank"
-                  href="https://github.com/sohel72989/HandiCraft-Jwellery-ServerSite"
                   className="blue text w-100"
                 >
                   Details
@@ -114,6 +106,14 @@ const Project = () => {
                   MongoDB,
                 </li>
               </ul>
+              <Link to="/projectDetailTwo">
+                <Button
+                  variant="outline-secondary"
+                  className="blue text w-100"
+                >
+                  Details
+                </Button>
+              </Link>
               <h5> 3.Project: PureDentSmile </h5>
               <ButtonGroup aria-label="Basic example">
                 <Button
@@ -148,6 +148,14 @@ const Project = () => {
                   Technology uses: HTML5, CSS Bootstrap, React JS, FakeData,
                 </li>
               </ul>
+              <Link to="/projectDetailThree">
+                <Button
+                  variant="outline-secondary"
+                  className="blue text w-100"
+                >
+                  Details
+                </Button>
+              </Link>
             </div>
           </Col>
         </Row>
