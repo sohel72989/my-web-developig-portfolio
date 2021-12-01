@@ -11,35 +11,35 @@ const Skills = () => {
             <><h3>
               <i class="fab fa-html5 fa-3x"></i>
             </h3>
-            <h5>HTML5</h5>
-            <p>this is the java Script</p></>
+            <h5 className="pb-5">HTML5</h5>
+            </>
             <><h3>
               <i class="fab fa-bootstrap fa-3x"></i>
             </h3>
             <h5>BOOTSTRAP</h5>
-            <p>this is the java Script</p></>
+            </>
           </Col>
           <Col xs={12} md={6} lg={4}><><h3>
               <i class="fab fa-react fa-3x"></i>
             </h3>
-            <h5>REACT</h5>
-                    <p>this is the java Script</p></>
+            <h5 className="pb-5">REACT</h5>
+                    </>
                     <><h3>
               <i class="fab fa-java fa-3x"></i>
             </h3>
             <h5>Java</h5>
-            <p>this is the java Script</p></>
+            </>
             </Col>
           <Col xs={12} md={6} lg={4}><><h3>
               <i class="fab fa-node-js fa-3x"></i>
             </h3>
-            <h5>NODE JS</h5>
-                    <p>this is the java Script</p></>
+            <h5 className="pb-5">NODE JS</h5>
+                   </>
                     <><h3>
               <i class="fab fa-python fa-3x"></i>
             </h3>
             <h5>python</h5>
-            <p>this is the java Script</p></>
+            </>
             </Col>
         </Row>
       </div>

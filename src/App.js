@@ -15,18 +15,16 @@ import ProjectDetailTwo from './Pages/Home/Project/ProjectDetail/ProjectDetailTw
 import ProjectDetailThree from './Pages/Home/Project/ProjectDetail/ProjectDetailThree';
 import Header from './Pages/Home/Header/Header';
 import AboutMe from './Pages/Home/Information/AboutMe';
-import Banner from './Pages/Home/Header/Banner/Banner';
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Banner/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/blogs" element={<Blogs />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route exact path="/home/contact" element={<Contact />} />
       <Route path="/project" element={<Project />} />
       <Route path="/aboutMe" element={<AboutMe />} />
       <Route path="/projectDetailOne" element={<ProjectDetailOne />} />

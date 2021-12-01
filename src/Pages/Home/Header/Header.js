@@ -19,7 +19,7 @@ const Header = () => {
           <Link to="/blogs" className="hv">
            BLOGS
           </Link>
-          <Link to="/contact" className="hv">
+          <Link to="/home/contact" className="hv">
             CONTACT
           </Link>
           <Link to="/aboutMe" className="hv">
