@@ -16,7 +16,7 @@ const Skills = () => {
             <><h3>
               <i class="fab fa-bootstrap fa-3x"></i>
             </h3>
-            <h5>BOOTSTRAP</h5>
+            <h5 className="pb-5">BOOTSTRAP</h5>
             </>
           </Col>
           <Col xs={12} md={6} lg={4}><><h3>
@@ -27,7 +27,7 @@ const Skills = () => {
                     <><h3>
               <i class="fab fa-java fa-3x"></i>
             </h3>
-            <h5>Java</h5>
+            <h5 className="pb-5">Java</h5>
             </>
             </Col>
           <Col xs={12} md={6} lg={4}><><h3>
@@ -38,7 +38,7 @@ const Skills = () => {
                     <><h3>
               <i class="fab fa-python fa-3x"></i>
             </h3>
-            <h5>python</h5>
+            <h5 className="pb-5">python</h5>
             </>
             </Col>
         </Row>
