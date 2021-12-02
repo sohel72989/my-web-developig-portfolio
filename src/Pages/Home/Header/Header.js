@@ -25,7 +25,7 @@ const Header = () => {
           <Link to="/aboutMe" className="hv">
             ABOUT ME
           </Link>
-          <Button target="_blank" href="https://drive.google.com/drive/folders/1a4DVBo4Tg9UMw33FRAPSzKAaQBYpXSbe" variant="outline-secondary" className=" blue text response">RESUME</Button>
+          <Button  href="Sohel_Rana'S_Resume_F.pdf" download="Sohel_Rana'S_Resume_F.pdf" variant="outline-secondary" className=" blue text response">RESUME</Button>
         </div>
        
       </div>
