@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import './Header.css';
+import Animation from './Animation/Animation';
 
 const Header = () => {
     return (
       <div>
+        <Animation/>
         <div className="container-style blue circleBehind">
           <Link to="/home" className="hv">
             HOME
