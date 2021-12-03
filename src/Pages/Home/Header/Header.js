@@ -2,35 +2,53 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import './Header.css';
-import Animation from './Animation/Animation';
-
 const Header = () => {
     return (
       <div>
-        <Animation/>
-        <div className="container-style blue circleBehind">
-          <Link to="/home" className="hv">
+        <nav class="navbar">
+        <ul class="nav-links">
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <div class="menu">
+              <li>
+              <Link to="/home" className="hv">
             HOME
           </Link>
-          <Link to="/skills" className="hv">
+         </li>
+              <li>
+              <Link to="/skills" className="hv">
             SKILLS
           </Link>
-          <Link to="/project" className="hv">
+          </li>
+              <li>
+              <Link to="/project" className="hv">
            PROJECTS
           </Link>
-          <Link to="/blogs" className="hv">
+         </li>
+              <li>
+              <Link to="/blogs" className="hv">
            BLOGS
           </Link>
-          <Link to="/home/contact" className="hv">
+         </li>
+         
+              <li>
+              <Link to="/home/contact" className="hv">
             CONTACT
           </Link>
-          <Link to="/aboutMe" className="hv">
+          </li>
+              <li>
+              <Link to="/aboutMe" className="hv">
             ABOUT ME
           </Link>
-          <Button  href="Sohel_Rana'S_Resume_F.pdf" download="Sohel_Rana'S_Resume_F.pdf" variant="outline-secondary" className=" blue text response">RESUME</Button>
+         </li>
+              <li>
+              <Button href="Sohel_Rana'S_Resume_F.pdf" download="Sohel_Rana'S_Resume_F.pdf" variant="outline" className="button">RESUME</Button>
+              </li>
+              </div>
+              </ul>
+          </nav>
         </div>
-       
-      </div>
+      
     );
 };
 

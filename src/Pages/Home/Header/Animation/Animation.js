@@ -87,7 +87,7 @@ const Animation = () => {
           },
         },
         detectRetina: true,
-      }}
+        }}
     />
     );
 };
